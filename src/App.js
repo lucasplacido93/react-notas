@@ -1,15 +1,15 @@
-import React from 'react';
-import ListaNotas from './components/lista-notas'
-import FormularioCadastro from './components/formulario-cadastro';
-
-function App() {
-  return (
-    <section>
-      <FormularioCadastro/>
-          <ListaNotas/>
-    </section>
-  );
+import React, { Component } from "react";
+import ListaDeNotas from "./components/ListaDeNotas";
+import  FormularioCadastro  from "./components/FormularioCadastro";
+class App extends Component {
+  render() {
+    return (
+      <section>
+        <FormularioCadastro />
+        <ListaDeNotas />
+      </section>
+    );
+  }
 }
-//react -> lib
-//React -> ecossistema
+
 export default App;
